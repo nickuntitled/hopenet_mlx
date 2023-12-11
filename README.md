@@ -2,7 +2,7 @@
 
 **Hopenet** is an accurate and easy to use head pose estimation network made by Nataniel Ruiz, which applies ResNet-50 as the backbone with multi-bin classification and regression heads. The original paper is available in [CVPR workshop from the author](https://arxiv.org/abs/1710.00925).
 
-After Apple published MLX libraries to be available on GitHub's repo, I tried applying this library with rewriting and modifying the code to predict head pose with almost similar to the original HopeNet work except for BatchNormalization which I replace to be GroupNorm due to no BatchNormalization available in MLX. Moreover, I changed the data augmentation proceses to be the two-step augmentation similar to [my GitHub gist](https://gist.github.com/nickuntitled/2e4bb2c57633a9a3ca8bdb1450cf72d6).
+After Apple published MLX libraries to be available on GitHub's repo, I tried applying this library with writing and modifying the code to predict head pose with almost similar to the original HopeNet work except for BatchNormalization which I replace to be GroupNorm due to no BatchNormalization available in MLX. Moreover, I changed the data augmentation proceses to be the two-step augmentation similar to [my GitHub gist](https://gist.github.com/nickuntitled/2e4bb2c57633a9a3ca8bdb1450cf72d6).
 
 The initial head pose result trained by 300W_LP with 5 epochs (just an example), and with the resolution 128x128 pixels is shown the below table. The reason of using this resolution is the limitation on my Mac Mini with 8GB RAM cannot run the model fast enough, and does not have capacity to run this resolution with a large batch size (like 32).
 
