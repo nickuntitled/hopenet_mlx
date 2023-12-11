@@ -2,7 +2,6 @@ import math
 import mlx.core as mx
 import mlx.nn as nn
 from typing import Union
-from model import BatchNorm2d
 
 class Convolution(nn.Conv2d):
     def __init__(
